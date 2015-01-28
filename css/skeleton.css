@@ -1,3 +1,8 @@
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -30,23 +35,44 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .AJLTitle {
 	background-image: url("../img/courthouse_dark.jpg");
-	background-size:cover;
+	background-position:0px -140px;
 	color:#fff;
+	padding:7rem 0 9rem;
+	font-family: "Libre Baskerville", Georgia, Times New Roman, serif;
+	text-align:center;
 }
 img.AJLServiceIcons {
 	display:block;
 	margin:1rem auto;
 	}
-
-.section {
-  padding: 8rem 0 7rem;
-  text-align: center;
+.AJLServices {
+	m
+	argin:2rem auto 2rem;
+	text-align: center;
+	}
+.navBar {
+	background:#1f1f1f;
+	text-align:center;
+	padding:0;
+	}
+ ul.navList {
+	margin:1rem 0;
+	padding:0;
+	line-height:0px;
+	display:inline-block;
 }
-.section-heading,
-.section-description {
-  margin-bottom: 1.2rem;
+ ul.navList li {
+	display:inline;
 }
-
+ ul.navList li a {
+	color:#f99;
+}
+.navButton.button {
+	font-size: 1.5rem;
+	margin: 1rem;
+	border:none;
+	/*background:#fff;*/
+}
 
 
 
@@ -148,7 +174,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Libre Baskerville", "Baskerville", Times New Roman, serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #222; }
 
 
