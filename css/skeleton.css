@@ -10,6 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Custom Styles
 - Grid
 - Base Styles
 - Typography
@@ -24,6 +25,29 @@
 - Clearing
 - Media Queries
 */
+
+/* Custom Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.AJLTitle {
+	background-image: url("../img/courthouse_dark.jpg");
+	background-size:cover;
+	color:#fff;
+}
+img.AJLServiceIcons {
+	display:block;
+	margin:1rem auto;
+	}
+
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+
 
 
 /* Grid
@@ -124,7 +148,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Libre Baskerville", "Baskerville", Times New Roman, serif;
   color: #222; }
 
 
