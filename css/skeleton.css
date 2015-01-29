@@ -35,9 +35,12 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .AJLTitle {
 	background-image: url("../img/courthouse_dark.jpg");
-	background-position:0px -140px;
+	background-size:cover;
+	background-color:#s1f1f1f;
+	background-position:0px -120px;
+	background-repeat:no-repeat;
 	color:#fff;
-	padding:7rem 0 9rem;
+	padding:7rem 0 0;
 	font-family: "Libre Baskerville", Georgia, Times New Roman, serif;
 	text-align:center;
 }
@@ -46,10 +49,13 @@ img.AJLServiceIcons {
 	margin:1rem auto;
 	}
 .AJLServices {
-	m
-	argin:2rem auto 2rem;
+	margin:0 auto;
 	text-align: center;
 	}
+.AJLServices .container {
+	background:#fff;
+	padding:2rem 0 1rem;
+}
 .navBar {
 	background:#1f1f1f;
 	text-align:center;
@@ -65,12 +71,16 @@ img.AJLServiceIcons {
 	display:inline;
 }
  ul.navList li a {
-	color:#f99;
+	color:#fff;
 }
 .navButton.button {
 	font-size: 1.5rem;
 	margin: 1rem;
-	border:none;
+	border:#E02828 solid 1px;
+	/*background:#fff;*/
+}
+.navButton.button:hover {
+	color:#fff;
 	/*background:#fff;*/
 }
 
@@ -175,8 +185,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #222; }
-
+  color: #222;
+  background:#F2F7F9;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -193,7 +204,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 5.0rem; }
+  h1 { font-size: 5.0rem; font-weight:bold;}
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
