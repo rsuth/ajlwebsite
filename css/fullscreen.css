@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic);
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -15,7 +16,7 @@
 
 
 /* Table of contents
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“
+––––––––––––––––––––––––––––––––––––––––––––––––––
 - Custom Styles
 - Grid
 - Base Styles
@@ -33,56 +34,41 @@
 */
 
 /* Custom Styles
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
+/* -----------------HEADER-------------*/
+.topbar {
+	background:#1f1f1f;
+}
+.topbar h1, h3 {font-family:"Gentium Book Basic", Georgia, serif; color:#FAF9F8;}
+.topbar h1 {text-align:center;font-weight:400;letter-spacing:0.1rem;font-size:6.5rem;} 			
+.topbar h3 {font-weight:400;}			
+.phone {font-style:italic;text-align:right;}
+.email {font-style:italic;text-align:left;}
 
-.AJLTitle {
-//	background-image: url("../img/courthouse_dark.jpg");
+/* -----------------Services Style-------------*/
+.services .container {
+	background-color: hsla(0, 0%, 0%, 0.7);
+	padding:2rem 2rem;
+	}
+.services {
+	color:#fff;
+}
+.services .row {
+	padding:2rem 0;
+}
+.serviceColumns.six.columns {
 	background-size:cover;
-	background-color:#1f1f1f;
-	background-position:0px -120px;
-	background-repeat:no-repeat;
-	color:#fff;
-	padding:1rem 0 0;
-	font-family: "Libre Baskerville", Georgia, Times New Roman, serif;
-	text-align:center;
+	height:40rem;
+	background-color: hsla(0, 0% 0%, 0.8);
 }
-.AJLTitle h1 {font-weight:bold;}
+s
+.services h2 {text-align:center; text-transform:uppercase;font-weight:700;font-size:3.4rem;}
+.serviceHeading {text-align:center;margin:4rem 0rem 1rem;font-weight:700;}
+.serviceCaption {text-align:center;font-size:2rem; padding:1.5rem;}
 
-
-.AJLSplashTitle {
-//	background-image: url("../img/large.jpg");
-//	background-size:cover;
-//	background-color:#1f1f1f;
-	background-repeat:no-repeat;
-	color:#fff;
-	padding:20rem 0 0;
-	font-family: "Libre Baskerville", Georgia, Times New Roman, serif;
-	text-align:center;
-	height:100%;
-}
-img.AJLServiceIcons {
-	display:block;
-	margin:1rem auto;
-	}
-.AJLServices {
-	margin:0 auto;
-	text-align: center;
-	background:url("../img/courthouse2.jpg");
-	}
-.AJLServices h3 {text-transform:uppercase;  font-weight:bold;  font-size:2rem;  border-bottom:1px solid #D1D1D1;  border-radius:4px; display:inline-block; padding:0.8rem;}
-.AJLServices h3 a {text-decoration:none; color:#595959}
-	
-.AJLServicesDetails {
-	text-align:left;
-}
-.AJLServicesDetails h4 {color:#933;}
-.AJLServices .container {
-	background:#fff;
-	padding:2rem 2rem 1rem;
-}
-.AJLServicesDetails img {margin:1rem;}
+/* -----------------Nav Bar-------------*/
 .navBar {
 	background:#1f1f1f;
 	text-align:center;
@@ -123,7 +109,7 @@ img.AJLServiceIcons {
 
 
 /* Grid
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
   width: 100%;
@@ -210,7 +196,7 @@ img.AJLServiceIcons {
 
 
 /* Base Styles
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
@@ -223,10 +209,14 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #222;
   background:#fff;
+  background-size:cover;
+  background-image: url("../img/large.jpg");
+  background-repeat:no-repeat;
+  background-color:#1f1f1f;
 }
 
 /* Typography
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -261,7 +251,7 @@ p {
 
 
 /* Links
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #1EAEDB; }
 a:hover {
@@ -269,7 +259,7 @@ a:hover {
 
 
 /* Buttons
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
 input[type="submit"],
@@ -329,7 +319,7 @@ input[type="button"].button-primary:focus {
 
 
 /* Forms
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -391,7 +381,7 @@ label > .label-body {
 
 
 /* Lists
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
   list-style: circle inside; }
 ol {
@@ -410,7 +400,7 @@ li {
 
 
 /* Code
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -426,7 +416,7 @@ pre > code {
 
 
 /* Tables
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
   padding: 12px 15px;
@@ -441,7 +431,7 @@ td:last-child {
 
 
 /* Spacing
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
   margin-bottom: 1rem; }
@@ -463,7 +453,7 @@ form {
 
 
 /* Utilities
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -477,7 +467,7 @@ form {
 
 
 /* Misc
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -486,7 +476,7 @@ hr {
 
 
 /* Clearing
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Self Clearing Goodness */
 .container:after,
@@ -498,7 +488,7 @@ hr {
 
 
 /* Media Queries
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
 Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
