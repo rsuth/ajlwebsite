@@ -60,14 +60,48 @@
 }
 .serviceColumns.six.columns {
 	background-size:cover;
-	height:40rem;
+	
 	background-color: hsla(0, 0% 0%, 0.8);
 }
-s
-.services h2 {text-align:center; text-transform:uppercase;font-weight:700;font-size:3.4rem;}
-.serviceHeading {text-align:center;margin:4rem 0rem 1rem;font-weight:700;}
+.services h2 {text-align:center; font-weight:700;font-size:3.4rem;display:inline-block;}
+.serviceInstructions {display:inline-block;text-align:center;font-weight:400;font-size:1.2rem;color:#858F93; margin-left:5rem;}
+.serviceHeading {margin:4rem 0rem 1rem;font-weight:700;text-transform:uppercase; text-align:center;}
+.windowIcon {height:2.1rem;display:inline-block;margin:0 0 0 2rem;}
 .serviceCaption {text-align:center;font-size:2rem; padding:1.5rem;}
 
+/* --------------- Popup Styling ------------*/
+.popupWindow {
+	width:35%;
+	margin:auto;
+	background:#fff;
+	background-image:url("../img/grid2x.png");
+	padding:4rem;
+	border:4px solid #858F93;
+	
+	}
+.gallery-item {
+	color:inherit;
+	display:block;
+}
+.gallery-item:hover {
+	color:inherit;
+}
+
+/* ------------------ Footer -------------*/
+
+.footer {
+	background:#1f1f1f;
+	text-align:center;
+	padding:0;
+	color:#858F93;
+	}
+.footer .row:first-child {
+	padding:1rem 0 0 0;
+	}
+
+
+
+	
 /* -----------------Nav Bar-------------*/
 .navBar {
 	background:#1f1f1f;
@@ -201,14 +235,15 @@ s
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-y: scroll;
+}
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #222;
-  background:#fff;
   background-size:cover;
   background-image: url("../img/large.jpg");
   background-repeat:no-repeat;

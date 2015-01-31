@@ -59,8 +59,18 @@
 		</div>
 		<div class="row">
 			<div class="serviceColumns six columns" style="background-image:url('img/stock/services1.jpg');">
-				<h4 class="serviceHeading"><a class="simple-ajax-popup" href="services/videography.html">Videography</a></h4>
+				<h4 class="serviceHeading"><a class="open-popup-link" href="#videography">Videography</a></h4>
 				<p class="serviceCaption">We provide deposition videography, transcript synchronization, format conversion, day-in-the life documentary video, and settlement presentations.</p>
+				
+				<!-- Hidden content of videography popup -->
+				<div id="videography" class="popupWindow mfp-hide">
+				<h2>Videography</h2>
+					<p>Believe it or not, I do have friends who would describe themselves as not liking math, and every so often one of them will share this meme on Facebook: And then Satan said, “Put the alphabet in math.” There are different background pictures each time the meme pops up, but the text is always the same. Some people feel like abstract notation was where math classes stopped making sense to them.</p>
+					<p>But what if we didn’t have that notation? In my math history class this semester, we got to look at what math was like before we (Satan?) put the alphabet in it. Specifically, we completed the square with al-Khwarizmi, the Persian mathematician who wrote the textbook about solving linear and quadratic equations that gave us the word “algebra.” He did not use symbols to represent unknown quantities, so his book contains instructions like this:</p>
+				</div>
+				<!-- End hidden content of videography popup -->
+				
+				
 			</div>
 			<div class="serviceColumns six columns" style="background-image:url('img/stock/services2.jpg');">
 				<h4 class="serviceHeading"><a href="consultation.html">Consultation</a></h4>
@@ -82,20 +92,13 @@
 <!-- POPUP JS -------------------------------->
 
 <script type="text/javascript">
-$(document).ready(function() {
-
-	$('.simple-ajax-popup-align-top').magnificPopup({
-		type: 'ajax',
-		alignTop: true,
-		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-	});
-
-	$('.simple-ajax-popup').magnificPopup({
-		type: 'ajax',
-		overflowY: 'scroll'
-	});
-	
+$('.open-popup-link').magnificPopup({
+  type:'inline',
+  midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 });
+gallery: {
+    enabled: true 
+  }
 </script>
 
 <!-- End Document ---------------------------->
